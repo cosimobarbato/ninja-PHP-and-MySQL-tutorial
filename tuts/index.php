@@ -1,7 +1,12 @@
 <?php 
 
-// echo "HELLO WORLD";
+$name = "Yoshi";
+$age = 30;
+// $name = "Mario";
 
+// defining a constant you need to use the following funciton
+// constant cannot be overwritten
+define('GENDER', 'Male');
 
 ?>
 
@@ -14,6 +19,6 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo"Hello, world"; ?></h1>
+  <h1><?php echo $name?> is <?php echo $age ?> and is a <?php echo GENDER ?></h1>
 </body>
 </html>
