@@ -1,12 +1,40 @@
 <?php 
 
-$name = "Yoshi";
-$age = 30;
-// $name = "Mario";
+$stringOne = 'my email is ';
+$stringTwo = 'cbarb001@gmail.com';
 
-// defining a constant you need to use the following funciton
-// constant cannot be overwritten
-define('GENDER', 'Male');
+// echo $stringOne . $stringTwo;
+
+$name = 'Mario';
+// echo 'Hey, my name is ' . $name . '.';
+
+// Use double quotes to insert variables directly inside strings 
+// echo "Hey my name is $name";
+
+
+// use backslash \ to esape characters
+// echo "the ninja screamed \"waaaaa\"";
+
+// or you can use double quotes inside of single quotes so it does not close the string early
+// echo 'the ninjas screamed "waaaaaa"';
+
+// use the following to find character in a string
+// echo $name[0];
+
+
+// strlen function finds the length of a string
+// echo strlen($name);
+
+// strtoupper changes string to uppercase
+// echo strtoupper($name);
+
+// change string to all lower case
+// echo strtolower($name);
+
+// replaces certain things in string
+echo str_replace('M','W', $name);
+
+
 
 ?>
 
@@ -19,6 +47,6 @@ define('GENDER', 'Male');
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo $name?> is <?php echo $age ?> and is a <?php echo GENDER ?></h1>
+  
 </body>
 </html>
