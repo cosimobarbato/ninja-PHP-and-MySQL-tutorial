@@ -1,6 +1,45 @@
 <?php 
 
-// echo "HELLO WORLD";
+// integer is a whole number
+$radius = 25;
+
+// float has a decimal point
+$pi = 3.14;
+
+// basic operators *, /, +, -, **
+
+// echo $pi * $radius**2;
+
+// order of operation ( B I D M A S )
+// Brackets, Indicies(means to the power of **), Division, Multiplication, Addition, Subtraction
+
+// echo 2 * (4 + 9) - 9 / 3;
+// 2 * 13 - 9 / 3
+// 26 - 3
+// 23 
+
+// if we echo before the ++ it will show the number before it adds 1
+// echo $radius++;
+// echo $radius;
+
+ $age = 20;
+
+// $age += 10;
+// $age -=10;
+// $age *= 2;
+// echo $age;
+
+// number
+
+// floor lowers number to the nearest int
+// echo floor($pi);
+
+// ceil moves the number up to the nearest int
+// echo ceil($pi);
+
+// pi is built into the language and when used as a function returns vlaue of pi
+echo pi();
+
 
 
 ?>
@@ -14,6 +53,6 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo"Hello, world"; ?></h1>
+  
 </body>
 </html>
