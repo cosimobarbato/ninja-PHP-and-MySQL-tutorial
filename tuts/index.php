@@ -1,28 +1,30 @@
 <?php 
-// MULTI-DIMENSIONAL ARRAYS WITH INDEX
-// $blogs = [
-//   ['mario party', 'mario', 'lorem', 30],
-//   ['mar kart cheats', 'toad', 'lorem', 25],
-//   ['zelda hidden cheats', 'link', 'lorem', 50]
-// ];
-// print_r($blogs[1][0]);
 
-// MULTI-DIMENSIONAL ARRAYS WITH ASSOCIATIVE ARRAYS
-$blogs = [
-  ['title'=>'mario party', 'author'=>'mario', 'content'=>'lorem','likes'=>30],
-  ['title'=>'mar kart cheats', 'author'=>'toad', 'content'=>'lorem','likes'=>25],
-  ['title'=>'zelda hidden cheats', 'author'=>'link', 'content'=>'lorem','likes'=>50]
-];
+// COMPARIONS BOOLEANS (TRUE OR FALSE)
 
-// echo $blogs[2]['author'];
-// echo count($blogs);
+// echo a boolean that is false will show as an empty string
+// echo 5 < 10;
+// echo 5 > 10;
+// echo 5 == 10;
+// echo 10 == 10;
+// echo 5 != 10;
+// echo 5 <= 5;
+// echo 5 >= 5;
 
-$blogs[] = ['title'=>'castle party', 'author'=>'peach', 'content'=>'lorem', 'likes'=>100];
+// if we compare two strings it compares by alphebitcial order a < z
+// also lowercase is > uppercase letter
+// echo 'sean' < 'yoshi';
+// echo 'sean' > 'yoshi';
+// echo 'sean' > 'Sean';
+// echo 'mario' == 'mario';
+// echo 'mario' === 'mario';
 
-// print_r($blogs);
-// take something off of an array
-$popped = array_pop($blogs);
-print_r($popped);
+// LOOSE VS STRICT EQUAL COMPARISON
+// echo 5 == '5';
+// echo 5 === '5';
+// echo true == '1';
+// echo false == '';
+
 ?>
 
 <!DOCTYPE html>
