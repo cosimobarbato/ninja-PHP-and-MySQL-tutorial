@@ -1,54 +1,28 @@
 <?php 
+// MULTI-DIMENSIONAL ARRAYS WITH INDEX
+// $blogs = [
+//   ['mario party', 'mario', 'lorem', 30],
+//   ['mar kart cheats', 'toad', 'lorem', 25],
+//   ['zelda hidden cheats', 'link', 'lorem', 50]
+// ];
+// print_r($blogs[1][0]);
 
-// FOR LOOP
-// for($i = 0; $i < 5; $i++){
-//   echo $i;
-// }
+// MULTI-DIMENSIONAL ARRAYS WITH ASSOCIATIVE ARRAYS
+$blogs = [
+  ['title'=>'mario party', 'author'=>'mario', 'content'=>'lorem','likes'=>30],
+  ['title'=>'mar kart cheats', 'author'=>'toad', 'content'=>'lorem','likes'=>25],
+  ['title'=>'zelda hidden cheats', 'author'=>'link', 'content'=>'lorem','likes'=>50]
+];
 
-// $blogs = ['blog1', 'blog2', 'blog3', 'blog4'];
+// echo $blogs[2]['author'];
+// echo count($blogs);
 
-// for($i = 0; $i < count($blogs); $i++){
-//        
-// }
+$blogs[] = ['title'=>'castle party', 'author'=>'peach', 'content'=>'lorem', 'likes'=>100];
 
-// FOR EACH LOOP - use when you don't know the length of something
-  // $blogs = ['blog1', 'blog2', 'blog3', 'blog4'];
-
-  // foreach($blogs as $blog){
-  //   echo $blog;
-  // }
-
-  $ninjas = ['shaun', 'ryu', 'yoshi'];
-
-  // for ($i= 0; $i < count($ninjas); $i++){
-  //   echo $ninjas[$i] . '<br />'; 
-  // }
-
-  // foreach($ninjas as $ninja){
-  //   echo $ninja . '<br>';
-  // }
-
-  $products = [
-    ['name'=> 'shiny star', 'price' => 20],
-    ['name'=> 'grenn shell', 'price' => 10],
-    ['name'=> 'red shell', 'price' => 15],
-    ['name'=> 'gold coin', 'price' => 40],
-    ['name'=> 'banana skin', 'price' => 2]
-  ];
-
-  // foreach ($products as $product){
-  //   echo $product['name'] . ' ' . $product['price'] . '<br>';
-  // }
-
-  // WHILE LOOP
-  // $i = 0;
-  // while ($i < count($products)){
-  //   echo $products[$i]['name'] . '<br>';
-  //   $i++;
-  // }
-
-
-
+// print_r($blogs);
+// take something off of an array
+$popped = array_pop($blogs);
+print_r($popped);
 ?>
 
 <!DOCTYPE html>
@@ -60,15 +34,7 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1>Products</h1>
-  <ul>
-    <?php foreach ($products as $product){ ?>
-       <li> 
-       <h2><?php echo $product['name']; ?></h2>
-       <p><?php echo $product['price']; ?></p>
-       </li>
-       <?php } ?>
-  </ul>
+  
  
 </body>
 </html>
