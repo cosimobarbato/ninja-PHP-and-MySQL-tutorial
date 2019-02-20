@@ -1,15 +1,6 @@
 <?php 
 
-// CONDITIONAL STATEMENTS
-// $price = 40;
-
-// if ($price < 10){
-//   echo 'if condition is met';
-// } else if ($price < 20) {
-//   echo 'elseif condition is met';
-// } else {
-//   echo 'the condition is not met';
-// }
+// CONTINUE & BREAK
 
 $products = [
   ['name' => 'shiny star', 'price' => 20],
@@ -21,10 +12,20 @@ $products = [
 ];
 
 foreach ($products as $product){
-  if($product['price'] < 15 && $product['price'] > 2){
-    echo $product['name'] . ' ' . $product['price'] . '<br>';
+  // if($product['name'] === 'lightening bolt'){
+  //   break;
+  // }
+
+  if($product['price'] > 15){
+    continue;
   }
+
+  echo $product['name'] . '<br>';
 }
+
+
+
+
 
 ?>
 
