@@ -1,29 +1,21 @@
 <?php 
 
-// CONTINUE & BREAK
+// FUNCTIONS
 
-$products = [
-  ['name' => 'shiny star', 'price' => 20],
-  ['name' => 'green shell', 'price' => 10],
-  ['name' => 'red shell', 'price' => 15],
-  ['name' => 'gold coin', 'price' => 5],
-  ['name' => 'lightening bolt', 'price' => 40],
-  ['name' => 'banana skin', 'price' => 2]
-];
-
-foreach ($products as $product){
-  // if($product['name'] === 'lightening bolt'){
-  //   break;
-  // }
-
-  if($product['price'] > 15){
-    continue;
-  }
-
-  echo $product['name'] . '<br>';
+function sayHello($name = 'Cosimo', $time = 'morning'){
+  echo "Good $time, $name!";
 }
 
+// sayHello('Mario');
+sayHello();
 
+// function formatProduct($product){
+//   return "{$product['name']} costs \${$product['price']} to buy <br>";
+// }
+
+// can store function in a variable
+// $formatted = formatProduct(['name'=>'gold star', 'price' => 20]);
+// echo $formatted;
 
 
 
