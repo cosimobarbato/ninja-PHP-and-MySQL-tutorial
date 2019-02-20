@@ -1,7 +1,30 @@
 <?php 
 
-// echo "HELLO WORLD";
+// CONDITIONAL STATEMENTS
+// $price = 40;
 
+// if ($price < 10){
+//   echo 'if condition is met';
+// } else if ($price < 20) {
+//   echo 'elseif condition is met';
+// } else {
+//   echo 'the condition is not met';
+// }
+
+$products = [
+  ['name' => 'shiny star', 'price' => 20],
+  ['name' => 'green shell', 'price' => 10],
+  ['name' => 'red shell', 'price' => 15],
+  ['name' => 'gold coin', 'price' => 5],
+  ['name' => 'lightening bolt', 'price' => 40],
+  ['name' => 'banana skin', 'price' => 2]
+];
+
+foreach ($products as $product){
+  if($product['price'] < 15 && $product['price'] > 2){
+    echo $product['name'] . ' ' . $product['price'] . '<br>';
+  }
+}
 
 ?>
 
@@ -14,6 +37,6 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo"Hello, world"; ?></h1>
+ 
 </body>
 </html>
