@@ -1,6 +1,18 @@
 <?php 
+  // add file
+  // include('ninjas.php');
 
-// echo "HELLO WORLD";
+  // or add file with require
+  // require('ninjas.php');
+
+  // can write without the ()
+  include 'ninjas.php';
+  require 'ninjas.php';
+
+
+  echo 'end of php';
+
+  // if there is no file, include will keep running the code below vs require will throw fatal error
 
 
 ?>
@@ -14,6 +26,10 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo"Hello, world"; ?></h1>
+
+<?php include('content.php');?>
+<?php include('content.php');?>
+<?php include('content.php');?>
+ 
 </body>
 </html>
